@@ -1,0 +1,33 @@
+@import "../../App";
+.header {
+  padding: 0.5rem 1rem;
+  color: $base-light;
+  background-color: $base-blue;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  .space {
+    flex: 1;
+  }
+  & .list {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+
+    li > a {
+      color: $base-light;
+      text-decoration: none;
+      padding: 0 1rem;
+      font-size: 18px;
+      font-weight: 400;
+
+      &:hover {
+        color: $base-red;
+      }
+    }
+    .active {
+      border-bottom: 3px solid $base-red;
+      padding-bottom: 29px;
+    }
+  }
+}
