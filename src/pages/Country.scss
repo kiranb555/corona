@@ -1,0 +1,14 @@
+@import '../App.scss';
+
+.country{
+    .country-head{
+        display: flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px 20px;
+        font-size:25px;
+        font-weight:bold;
+        color:$base-light;
+        background-color:$base-blue;
+    }
+}

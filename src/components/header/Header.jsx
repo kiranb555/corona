@@ -11,22 +11,22 @@ function Header() {
       <nav>
         <ul className="list">
           <li>
-            <NavLink to="home" exact activeClassName="active">
+            <NavLink to="/home" exact activeClassName="active">
               Home
             </NavLink>
           </li>
           <li>
-            <NavLink to="history" exact activeClassName="active">
+            <NavLink to="/history" exact activeClassName="active">
               History
             </NavLink>
           </li>
           <li>
-            <NavLink to="safety" exact activeClassName="active">
+            <NavLink to="/safety" exact activeClassName="active">
               Precaution
             </NavLink>
           </li>
           <li>
-            <NavLink to="update" exact activeClassName="active">
+            <NavLink to="/update" exact activeClassName="active">
               Updates
             </NavLink>
           </li>

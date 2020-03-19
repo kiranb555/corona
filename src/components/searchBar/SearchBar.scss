@@ -1,0 +1,34 @@
+@import "../../App.scss";
+
+.searchBar {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0px;
+
+  svg {
+    position: relative;
+    z-index: 100;
+    right: 30px;
+    top: 20px;
+    color: $base-darkshaded;
+  }
+  .cursor {
+    cursor: pointer;
+  }
+  input {
+    width: 90%;
+    position: relative;
+    height: 30px;
+    border: 1px solid grey;
+    border-radius: 8px;
+    outline: none;
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .shadow_effect {
+    -webkit-box-shadow: 0 7px 6px -6px #777;
+    -moz-box-shadow: 0 7px 6px -6px #777;
+    box-shadow: 0 7px 6px -6px #777;
+  }
+}

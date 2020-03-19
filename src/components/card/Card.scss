@@ -1,0 +1,67 @@
+@import "../../App.scss";
+.cardHolder {
+  width: 100%;
+  display: grid;
+  grid-gap: 20px;
+  grid-auto-rows: minmax(250px, auto);
+  grid-template-columns: repeat(3, 1fr);
+  .card {
+    width: 100%;
+    border: 0.5px solid $base-blue;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    background-color: $base-paleblue;
+    text-align: center;
+    cursor: pointer;
+
+    & a{
+      color : $base-darkshaded;
+      text-decoration: none;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .card-heading {
+      height: 20px;
+      font-size: medium;
+      font-weight: bold;
+      color: $base-light;
+      text-align: center;
+      text-transform: uppercase;
+      padding: 15px 0px;
+      background-color: $base-darkshaded;
+      border-radius: 9px 9px 0px 0px;
+    }
+
+    .card-content {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      align-items: center;
+      margin: 20px 0px;
+      padding: 20px 10px;
+
+      span {
+        font-size: 20px;
+        font-weight: 600;
+        color: $base-red;
+      }
+    }
+    .card-footer {
+      padding: 10px 0px;
+      color: $base-blue;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    & {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  @media only screen and (min-width: 1440px) {
+    & {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+}

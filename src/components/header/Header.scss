@@ -1,17 +1,24 @@
 @import "../../App";
 .header {
-  padding: 0.5rem 1rem;
+  padding: 0.5rem 2rem;
   color: $base-light;
-  background-color: $base-blue;
+  background: rgb(177, 15, 46);
+  background: linear-gradient(
+    150deg,
+    rgba(177, 15, 46, 1) 0%,
+    rgba(9, 12, 155, 1) 100%,
+    rgba(1, 186, 239, 1) 100%
+  );
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   .space {
     flex: 1;
   }
-  & .list {
+  .list {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
     list-style-type: none;
 
     li > a {
@@ -22,12 +29,32 @@
       font-weight: 400;
 
       &:hover {
-        color: $base-red;
+        color: $base-cyan;
       }
     }
     .active {
-      border-bottom: 3px solid $base-red;
+      border-bottom: 3px solid $base-cyan;
       padding-bottom: 29px;
+    }
+  }
+
+  .heading {
+    text-shadow: 2px 2px 4px $base-dark;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .list {
+    padding-left: 0px;
+    text-align: center;
+    li {
+      width: 100%;
+      padding-bottom: 15px;
+    }
+
+    & .active {
+      border-bottom: 1px solid $base-cyan;
+      padding-bottom: 5px !important;
     }
   }
 }

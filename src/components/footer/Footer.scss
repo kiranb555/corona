@@ -1,9 +1,32 @@
 @import "../../App";
 
 .footer {
-  height: 200px;
   background-color: $base-dark;
   color: $base-light;
   text-align: center;
-  padding: 20px;
+  padding: 50px 0px;
+
+  & .source {
+    padding: 10px 0px;
+  }
+
+  .footer-icon {
+    display: flex;
+    justify-content: center;
+    & ul {
+      width: 200px;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+      padding-inline-start: 0px !important;
+
+      & a {
+        color: $base-light;
+
+        &:hover {
+          color: $base-cyan;
+        }
+      }
+    }
+  }
 }

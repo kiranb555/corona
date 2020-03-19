@@ -1,0 +1,11 @@
+@import "../App.scss";
+
+.home {
+  min-height: 100vh;
+
+  h1 {
+    color: $base-darkshaded;
+    font-size: 25px;
+    line-height: 28px;
+  }
+}
