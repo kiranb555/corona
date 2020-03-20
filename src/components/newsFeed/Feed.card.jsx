@@ -5,7 +5,7 @@ const FeedCard = ({ data }) => {
   let time = new Date(data.publishedAt);
 
   return (
-    <a href={data.url} target="_blank">
+    <a href={data.url} target="_blank" rel="noopener noreferrer">
       <div className="feedcard card">
         <div className="feddCardBody">
           <div>
