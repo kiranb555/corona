@@ -4,9 +4,8 @@ import { connect } from "react-redux";
 import axios from "axios";
 
 import Home from "./pages/Home";
-import History from "./pages/History";
-import Safety from "./pages/Safety";
-import Update from "./pages/Update";
+import Precaution from "./pages/Precaution";
+import Faq from "./pages/Faq";
 import Country from "./pages/Country";
 
 import Header from "./components/header";
@@ -28,11 +27,9 @@ const App = props => {
         <div className="container">
           <Switch>
             <Route exact path="/home" component={Home}></Route>
-            <Route exact path="/history" component={History}></Route>
-            <Route exact path="/safety" component={Safety}></Route>
-            <Route exact path="/update" component={Update}></Route>
-            <Route exact path="/country/:name" component={Country}>
-            </Route>
+            <Route exact path="/precaution" component={Precaution}></Route>
+            <Route exact path="/faq" component={Faq}></Route>
+            <Route exact path="/country/:name" component={Country}></Route>
             <Route>
               <Home />
             </Route>

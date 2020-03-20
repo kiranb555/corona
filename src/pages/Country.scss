@@ -1,14 +1,23 @@
-@import '../App.scss';
+@import "../App.scss";
 
-.country{
-    .country-head{
-        display: flex;
-        justify-content:space-between;
-        align-items:center;
-        padding:15px 20px;
-        font-size:25px;
-        font-weight:bold;
-        color:$base-light;
-        background-color:$base-blue;
-    }
+.country {
+  .country-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    font-size: 25px;
+    font-weight: bold;
+    color: $base-light;
+    background-color: $base-blue;
+  }
+  .tableNewsHolder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .newsFeed {
+    width: 350px;
+  }
 }

@@ -1,0 +1,20 @@
+@import "../App.scss";
+
+.precaution {
+  padding: 20px 0px;
+  h1 {
+    color: $base-blue;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 28px;
+    text-transform: uppercase;
+  }
+  .precautionHolder {
+    margin: 20px 0px;
+
+    h4 {
+      color: $base-cyan;
+      font-weight: bold;
+    }
+  }
+}

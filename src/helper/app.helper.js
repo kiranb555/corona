@@ -16,6 +16,7 @@ const Helper = {
     });
 
     // sorting data
+
     newData.sort(function(a, b) {
       var confA = a["confirmed"];
       var confB = b["confirmed"];
@@ -25,14 +26,13 @@ const Helper = {
       if (confA > confB) {
         return -1;
       }
-
       // names must be equal
       return 0;
     });
     return newData;
   },
   detail: data => {
-    let confirm = [],
+    var confirm = [],
       death = [],
       recovery = [];
 

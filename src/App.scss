@@ -12,3 +12,12 @@ $base-paleblue: #c2c2d5;
   padding: 1rem 2rem;
   min-height: 100vh;
 }
+
+a {
+  color: $base-darkshaded;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}

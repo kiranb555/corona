@@ -10,8 +10,8 @@ import Helper from "../helper/app.helper";
 import "./Home.scss";
 
 const Home = ({ baseData }) => {
-  let newData = Helper.latestData(baseData);
-  let details = Helper.detail(newData);
+  const newData = Helper.latestData(baseData);
+  const details = Helper.detail(newData);
 
   // search field
   const [searchFieldInput, setsearchFieldInput] = useState("");
@@ -20,26 +20,34 @@ const Home = ({ baseData }) => {
   };
 
   // data filter
+  var filteredData;
   if (searchFieldInput !== "") {
-    newData = newData.filter(e =>
+    filteredData = newData.filter(e =>
       e.country.toLowerCase().includes(searchFieldInput.toLowerCase())
     );
   }
-
   return (
     <div className="home">
-      <h1>Coronavirus disease (COVID - 19) outbreak</h1>
+      <div className="home_head">
+        <h1>Coronavirus disease (COVID - 19) outbreak</h1>
+        <small>As of {newData[newData.length - 1]["date"]}</small>
+      </div>
+
       <Description
         confirmed={details[0]}
         death={details[1]}
         recovered={details[2]}
       />
+
       <SearchBar
         searchHandler={searchHandler}
         searchFieldInput={searchFieldInput}
         setsearchFieldInput={setsearchFieldInput}
       />
-      <Card data={newData} searchFieldInput={searchFieldInput} />
+      <Card
+        data={searchFieldInput ? filteredData : newData}
+        searchFieldInput={searchFieldInput}
+      />
     </div>
   );
 };

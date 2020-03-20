@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { NavLink } from "react-router-dom";
 
 import "./Header.scss";
@@ -12,22 +12,17 @@ function Header() {
         <ul className="list">
           <li>
             <NavLink to="/home" exact activeClassName="active">
-              Home
+              HOME
             </NavLink>
           </li>
           <li>
-            <NavLink to="/history" exact activeClassName="active">
-              History
+            <NavLink to="/precaution" exact activeClassName="active">
+              PRECAUTION
             </NavLink>
           </li>
           <li>
-            <NavLink to="/safety" exact activeClassName="active">
-              Precaution
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/update" exact activeClassName="active">
-              Updates
+            <NavLink to="/faq" exact activeClassName="active">
+              FAQ
             </NavLink>
           </li>
         </ul>

@@ -1,0 +1,38 @@
+@import "../../App.scss";
+
+.feedcard {
+  margin-bottom: 10px;
+
+  .feddCardBody {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    color: $base-darkshaded;
+    cursor: pointer;
+    img {
+      border-radius: 4px;
+    }
+    .newsInfo {
+      width: calc(100% - 150px);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      .newsTitle {
+        font-size: 14px;
+        font-weight: bold;
+      }
+      .newsProvider {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+        overflow: hidden;
+        margin-top: 8px;
+        font-size: 11px;
+        color: $base-grey;
+      }
+    }
+  }
+}

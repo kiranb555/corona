@@ -2,10 +2,26 @@
 
 .home {
   min-height: 100vh;
+  .home_head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: $base-blue;
+      font-size: 24px;
+      font-weight: bold;
+      line-height: 28px;
+      text-transform: uppercase;
+    }
 
-  h1 {
-    color: $base-darkshaded;
-    font-size: 25px;
-    line-height: 28px;
+    @media only screen and (max-width: 600px) {
+      h1 {
+        font-size: 22px;
+      }
+    }
+    small {
+      color: $base-grey;
+    }
   }
 }

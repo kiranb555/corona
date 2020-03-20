@@ -16,7 +16,7 @@ const Description = ({ confirmed, death, recovered }) => {
         <span className="death">
           <CountUp end={death} separator={","} duration={2} />
         </span>
-        <div>Death Cases</div>
+        <div>Fatal Cases</div>
       </div>
       <div>
         <span className="recovered">

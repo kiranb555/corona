@@ -12,6 +12,8 @@
   display: flex;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-evenly;
+
   .space {
     flex: 1;
   }
@@ -20,7 +22,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     list-style-type: none;
-
+    margin-bottom: 0px !important;
     li > a {
       color: $base-light;
       text-decoration: none;
@@ -34,7 +36,7 @@
     }
     .active {
       border-bottom: 3px solid $base-cyan;
-      padding-bottom: 29px;
+      padding-bottom: 17px;
     }
   }
 
