@@ -26,10 +26,11 @@ const Home = ({ baseData }) => {
       e.country.toLowerCase().includes(searchFieldInput.toLowerCase())
     );
   }
+
   return (
-    <div className="home">
+    <div className="home" id="Home">
       <div className="home_head">
-        <h1>Coronavirus disease (COVID - 19) outbreak</h1>
+        <h1>Coronavirus disease (COVID - 19) outbreak </h1>
         <small>As of {newData[newData.length - 1]["date"]}</small>
       </div>
 

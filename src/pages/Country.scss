@@ -10,6 +10,12 @@
     font-weight: bold;
     color: $base-light;
     background-color: $base-blue;
+
+    @media only screen and (max-width: 600px) {
+      & {
+        padding: 15px 10px;
+      }
+    }
   }
   .tableNewsHolder {
     display: flex;

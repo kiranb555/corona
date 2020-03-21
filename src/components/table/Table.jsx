@@ -14,7 +14,7 @@ const TABLE = ({ data }) => {
           {data.length > 0 ? (
             <tr>
               {Object.keys(data[0]).map((e, i) => {
-                return <th key={i}>{e}</th>;
+                return <th key={i}>{e.toUpperCase()}</th>;
               })}
             </tr>
           ) : null}

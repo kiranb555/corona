@@ -5,6 +5,11 @@
   justify-content: center;
   margin: 20px 0px;
 
+  @media only screen and (max-width: 600px) {
+    & {
+      padding-left: 20px;
+    }
+  }
   svg {
     position: relative;
     z-index: 100;

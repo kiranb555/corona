@@ -5,3 +5,14 @@
   padding-bottom: 20px;
   color: $base-darkshaded;
 }
+
+@media only screen and (max-width: 600px) {
+  .table {
+    font-size: 10px !important;
+
+    tr {
+      font-size: 8px !important;
+      font-weight: 400;
+    }
+  }
+}

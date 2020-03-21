@@ -9,7 +9,7 @@ const FeedCard = ({ data }) => {
       <div className="feedcard card">
         <div className="feddCardBody">
           <div>
-            <img src={data.urlToImage} width="140" heigh="140" alt="img" />
+            <img src={data.urlToImage} width="140" height="100" alt="img" />
           </div>
           <div className="newsInfo">
             <div className="newsTitle">{data.title}</div>

@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     h1 {
       color: $base-blue;
@@ -17,7 +18,7 @@
 
     @media only screen and (max-width: 600px) {
       h1 {
-        font-size: 22px;
+        font-size: 20px;
       }
     }
     small {

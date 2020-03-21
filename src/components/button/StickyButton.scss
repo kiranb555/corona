@@ -1,0 +1,19 @@
+@import "../../App.scss";
+
+.sticky-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: $base-light;
+  background-color: $base-cyan;
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+
+  position: fixed;
+  right: 2%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

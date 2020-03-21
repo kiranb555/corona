@@ -3,7 +3,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faTwitter,
   faInstagram,
-  faGithub
+  faGithub,
+  faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 import "./Footer.scss";
 
@@ -11,7 +12,7 @@ function Footer() {
   return (
     <div className="footer">
       <div>&copy;2020</div>
-      <div>Developed by Kiran b, Bangalore,India</div>
+      <div>Developed by Kiran B, Bangalore,India</div>
       <div className="footer-icon">
         <ul>
           <li>
@@ -30,6 +31,15 @@ function Footer() {
               rel="noopener noreferrer"
             >
               <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/kiran-b-805554170/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
             </a>
           </li>
           <li>

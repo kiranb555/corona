@@ -1,19 +1,21 @@
 import React from "react";
-import FeedCard from "./Feed.card";
+import { connect } from "react-redux";
+
+import FeedCard from "./Feed.card.jsx";
 
 import Fade from "react-reveal/Fade";
 
 import "./Feed.scss";
 
-const Feed = ({ data }) => {
+const Feed = ({ newsData }) => {
   return (
     <div className="feedHolder">
-      {data.length > 0 ? (
+      {newsData.length > 0 ? (
         <>
           <div className="feedHeading">News</div>
           <div className="feedContent">
-            {data
-              ? data.map((e, i) => (
+            {newsData
+              ? newsData.map((e, i) => (
                   <Fade bottom key={i}>
                     <FeedCard data={e} />
                   </Fade>
@@ -28,4 +30,8 @@ const Feed = ({ data }) => {
   );
 };
 
-export default Feed;
+const mapStateToProps = state => {
+  return { newsData: state.newsData };
+};
+
+export default connect(mapStateToProps)(Feed);

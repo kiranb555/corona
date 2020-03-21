@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { useParams } from "react-router";
 import { connect } from "react-redux";
 import axios from "axios";
+import newsFeed from "../helper/newsFeed.js";
 
 import { Row, Col } from "react-bootstrap";
 
@@ -16,7 +17,7 @@ import Feed from "../components/newsFeed";
 
 import "./Country.scss";
 
-const Country = ({ baseData }) => {
+const Country = ({ baseData, newsUpdateHandler }) => {
   const { name } = useParams();
 
   const countryData = baseData[name];
@@ -66,8 +67,6 @@ const Country = ({ baseData }) => {
     ]
   };
 
-  const [news, setNews] = useState([]);
-
   useEffect(() => {
     axios
       .get(
@@ -76,7 +75,11 @@ const Country = ({ baseData }) => {
         }&category=health&apiKey=2d5855918129408693f3ddaf302daadd
       `
       )
-      .then(res => setNews(res.data.articles))
+      .then(res =>
+        newsUpdateHandler(
+          res.data.articles.length > 0 ? res.data.articles : newsFeed
+        )
+      )
       .catch(err => console.log(err));
   }, []);
 
@@ -89,7 +92,7 @@ const Country = ({ baseData }) => {
             <img
               src={`https://lipis.github.io/flag-icon-css/flags/1x1/${countryCode.toLowerCase()}.svg`}
               alt="flag"
-              width="100"
+              width="40"
               height="40"
             />
           </div>
@@ -106,7 +109,7 @@ const Country = ({ baseData }) => {
           {countryData ? <TABLE data={countryData} /> : null}
         </Col>
         <Col xs={12} md={6}>
-          {news ? <Feed data={news} /> : null}
+          <Feed />
         </Col>
       </Row>
     </div>
@@ -117,4 +120,12 @@ const mapStateToProps = state => {
   return { baseData: state.baseData };
 };
 
-export default connect(mapStateToProps)(Country);
+const mapDispatchToProp = dispatch => {
+  return {
+    newsUpdateHandler: data => {
+      dispatch({ type: "NEWS_DATA", payload: data });
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProp)(Country);

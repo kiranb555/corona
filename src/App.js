@@ -11,6 +11,8 @@ import Country from "./pages/Country";
 import Header from "./components/header";
 import Footer from "./components/footer";
 
+import StickyButton from "./components/button/StickyButton";
+
 const App = props => {
   // updating data to redux store
   useEffect(() => {
@@ -19,6 +21,10 @@ const App = props => {
       .then(res => props.updateData(res.data))
       .catch(err => console.log(err));
   }, []);
+
+  const scrollTo = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <Router>
@@ -34,6 +40,7 @@ const App = props => {
               <Home />
             </Route>
           </Switch>
+          <StickyButton click={() => scrollTo()} />
         </div>
         <Footer />
       </div>

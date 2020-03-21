@@ -4,7 +4,7 @@
   background-color: $base-dark;
   color: $base-light;
   text-align: center;
-  padding: 50px 0px;
+  padding: 35px 0px;
 
   & .source {
     padding: 10px 0px;
@@ -13,6 +13,7 @@
   .footer-icon {
     display: flex;
     justify-content: center;
+    margin: 6px 0px;
     & ul {
       width: 200px;
       display: flex;

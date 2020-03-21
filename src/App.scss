@@ -8,6 +8,7 @@ $base-red: #b10f2e;
 $base-green: #39982a;
 $base-grey: #c5c5c5;
 $base-paleblue: #c2c2d5;
+
 .container {
   padding: 1rem 2rem;
   min-height: 100vh;
@@ -19,5 +20,11 @@ a {
 
   &:hover {
     text-decoration: none;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 1rem 1.5rem;
   }
 }
