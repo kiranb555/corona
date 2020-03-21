@@ -71,7 +71,7 @@ const Country = ({ baseData }) => {
   useEffect(() => {
     axios
       .get(
-        `http://newsapi.org/v2/top-headlines?country=${
+        `https://newsapi.org/v2/top-headlines?country=${
           countryCode ? countryCode.toLowerCase() : `in`
         }&category=health&apiKey=2d5855918129408693f3ddaf302daadd
       `
@@ -87,7 +87,7 @@ const Country = ({ baseData }) => {
         {countryCode ? (
           <div className="country-flag">
             <img
-              src={`http://lipis.github.io/flag-icon-css/flags/1x1/${countryCode.toLowerCase()}.svg`}
+              src={`https://lipis.github.io/flag-icon-css/flags/1x1/${countryCode.toLowerCase()}.svg`}
               alt="flag"
               width="100"
               height="40"
