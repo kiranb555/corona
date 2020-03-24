@@ -6,7 +6,7 @@ import "./Precaution.scss";
 function Precaution() {
   return (
     <div className="precaution">
-      <h1>Precaution measures : </h1>
+      <h1>Precaution measures </h1>
       <Fade bottom>
         <div className="precautionHolder">
           <h4 className="question">

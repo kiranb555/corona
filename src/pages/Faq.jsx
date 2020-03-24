@@ -7,7 +7,7 @@ import "./Precaution.scss";
 function Faq() {
   return (
     <div className="precaution">
-      <h1>Frequently asked questions : </h1>
+      <h1>Frequently asked questions  </h1>
       {Data.map((e, i) => {
         return (
           <Fade bottom key={i}>
