@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/kiranb555/corona/static/css/main.fba5c77d.chunk.css",
+    "main.js": "/kiranb555/corona/static/js/main.a89c8085.chunk.js",
+    "main.js.map": "/kiranb555/corona/static/js/main.a89c8085.chunk.js.map",
+    "runtime-main.js": "/kiranb555/corona/static/js/runtime-main.5f51152c.js",
+    "runtime-main.js.map": "/kiranb555/corona/static/js/runtime-main.5f51152c.js.map",
+    "static/css/2.17e5ed98.chunk.css": "/kiranb555/corona/static/css/2.17e5ed98.chunk.css",
+    "static/js/2.32fc8850.chunk.js": "/kiranb555/corona/static/js/2.32fc8850.chunk.js",
+    "static/js/2.32fc8850.chunk.js.map": "/kiranb555/corona/static/js/2.32fc8850.chunk.js.map",
+    "index.html": "/kiranb555/corona/index.html",
+    "precache-manifest.8360e329921b0cfe8b27068725c6fdb3.js": "/kiranb555/corona/precache-manifest.8360e329921b0cfe8b27068725c6fdb3.js",
+    "service-worker.js": "/kiranb555/corona/service-worker.js",
+    "static/css/2.17e5ed98.chunk.css.map": "/kiranb555/corona/static/css/2.17e5ed98.chunk.css.map",
+    "static/css/main.fba5c77d.chunk.css.map": "/kiranb555/corona/static/css/main.fba5c77d.chunk.css.map",
+    "static/js/2.32fc8850.chunk.js.LICENSE.txt": "/kiranb555/corona/static/js/2.32fc8850.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5f51152c.js",
+    "static/css/2.17e5ed98.chunk.css",
+    "static/js/2.32fc8850.chunk.js",
+    "static/css/main.fba5c77d.chunk.css",
+    "static/js/main.a89c8085.chunk.js"
+  ]
+}
