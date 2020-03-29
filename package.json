@@ -1,5 +1,4 @@
 {
-  "homepage": "https://github.com/kiranb555/corona",
   "name": "corona",
   "version": "0.1.0",
   "private": true,
@@ -14,7 +13,6 @@
     "axios": "^0.19.2",
     "bootstrap": "^4.4.1",
     "font-awesome": "^4.7.0",
-    "gh-pages": "^2.2.0",
     "highcharts": "^8.0.4",
     "highcharts-react-official": "^3.0.0",
     "node-sass": "^4.13.1",
@@ -30,8 +28,6 @@
     "redux-logger": "^3.0.6"
   },
   "scripts": {
-    "predeploy" : "yarn run build",
-    "deploy" : "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
