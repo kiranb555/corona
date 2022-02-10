@@ -15,7 +15,7 @@
     "font-awesome": "^4.7.0",
     "highcharts": "^8.0.4",
     "highcharts-react-official": "^3.0.0",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "react": "^16.13.0",
     "react-bootstrap": "^1.0.0-beta.17",
     "react-countup": "^4.3.3",
